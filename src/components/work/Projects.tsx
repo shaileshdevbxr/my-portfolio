@@ -16,7 +16,7 @@ export function Projects({ range }: ProjectsProps) {
   const displayedProjects = range
     ? sortedProjects.slice(range[0] - 1, range[1] ?? sortedProjects.length)
     : sortedProjects;
-
+console.log(displayedProjects)
   return (
     <Column fillWidth gap="xl" marginBottom="40" paddingX="l">
       {displayedProjects.map((post, index) => (
